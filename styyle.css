@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #3f3752;
+}
+.container {
+  position: relative;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.container .serviceBox {
+  position: relative;
+  width: 350px;
+  height: 280px;
+  background: #51446e;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.container .serviceBox .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--i);
+  transition: 0.9s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.container .serviceBox:hover .icon {
+  top: 30px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border: 50%;
+  border-radius: 50%;
+}
+.container .serviceBox .icon ion-icon {
+  font-size: 50px;
+  color: #fff;
+}
+.container .serviceBox .content {
+  position: relative;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 150px;
+  z-index: 1;
+}
+.color {
+  color: #fff;
+}
